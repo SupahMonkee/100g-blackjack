@@ -11,9 +11,13 @@ def value(hand):
   may return a list if the hand contains an Ace
   eg:
   '''
-  
+  for i in value(hand):
+    if "A" in hand:
+      points = ["testing", "it worked"]
+  print(points)
   return None
 
+value(['AH','3D','4S'])
 
 def main():
   assert value(['AH','3D','4S']) ==[8,18]
@@ -23,3 +27,4 @@ def main():
 
 if __name__ == "__name__":
   main()
+
