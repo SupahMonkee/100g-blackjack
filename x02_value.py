@@ -11,13 +11,21 @@ def value(hand):
   may return a list if the hand contains an Ace
   eg:
   '''
-  for i in value(hand):
-    if "A" in hand:
-      points = ["testing", "it worked"]
-  print(points)
-  return None
+  aces = ['AC','AD','AH','AS']
+  acecount = 0
+  check = 0
+  for i in aces:
+    if aces(acecount) in hand:
+      points = 'test'
+      check = 1
+      acecount += 1
+    elif check == 0:
+      points = 0
+  return points
 
-value(['AH','3D','4S'])
+
+print(value(['AH','3D','4S']))
+
 
 def main():
   assert value(['AH','3D','4S']) ==[8,18]
