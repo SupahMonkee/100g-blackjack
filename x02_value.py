@@ -13,15 +13,17 @@ def value(hand):
   '''
   aces = ['AC','AD','AH','AS']
   acecount = 0
-  check = 0
+  isace = 0
   for i in aces:
-    if aces(acecount) in hand:
-      points = 'test'
-      check = 1
-      acecount += 1
-    elif check == 0:
-      points = 0
-  return points
+    if aces[acecount] in hand:
+      score = []
+      isace = 1
+    else:
+      pass
+    acecount += 1
+  
+  
+  return score
 
 
 print(value(['AH','3D','4S']))
